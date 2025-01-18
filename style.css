@@ -1,10 +1,7 @@
 body {
-    background-color: aquamarine;
+    background-color: lightgrey;
 }
 
-h1 {
-    color:blue;
-}
 
 .canvas {
     display:flex;
@@ -12,6 +9,7 @@ h1 {
     height:800px;
     aspect-ratio: 1/1;
     flex-wrap:wrap;
+    user-select: none;
 }
 
 

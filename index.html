@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Etch-a-sketch</title>
     <link rel="stylesheet" href="style.css"></link>
 </head>
 <body>
     <h1>Etch-a-sketch!</h1>
-    <p>How many squares per side should your canvas have? (e.g., enter 16 for a 16x16 grid)</p>
-    <input type="text" id="numSquares"><button>Submit</button><br><br>
+
+    <div class="inputSection">
+        <p>How many squares per side should your canvas have? (Please enter 1 to 100) </p>
+        <input type="text" class="numSquaresInput" placeholder="enter 16 for a 16x16 grid">
+        <button class="numSquaresButton">Submit</button>
+        <br><br>
+        <div class="colorPicker">
+            <button class="randomColors" value="random">Random Colors</button>
+            <button class="defaultBlack" value="black">Default Black</button>
+        </div>
+        <br><br>
+    </div>
+    <div class="instructions">
+        <p>Click anywhere in the canvas to start drawing.</p>
+    </div>
     <div class="canvas"></div>
     <script src="js.js"></script>
 </body>
