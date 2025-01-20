@@ -38,7 +38,6 @@ button.addEventListener('click', () => {
         input.value = "";
         input.focus();
         drawing();
-        pageLoad++;
     }
 })
 
@@ -72,24 +71,23 @@ function drawing() { // the drawing function colors the existing squares when th
 }
 
 
-// setting the color selector
-let currentColorMode = 'black';
+// set the color selector 
+let currentColorMode = 'black'
 
 function getColor () {
     if (currentColorMode === 'random') {
-        return randomColor()}
-        else return 'black';
+        return randomColor();
+    } else return 'black'
 }
 
-let randomColors = document.querySelector('.randomColors');
-randomColors.addEventListener('click', () => currentColorMode ='random');
+let randomColors = document.querySelector(".randomColors");
+randomColors.addEventListener('click', () => {currentColorMode = 'random'});
 
-let defaultBlack = document.querySelector('.defaultBlack');
-defaultBlack.addEventListener('click', () => currentColorMode ='black');
+let defaultBlack = document.querySelector(".defaultBlack");
+defaultBlack.addEventListener('click', () => {currentColorMode = 'black'});
 
 
-
-// functions to get random color
+// get a random color
 function randomNumber(topNumber) {
     return Math.floor(Math.random()*topNumber+1)
 }
